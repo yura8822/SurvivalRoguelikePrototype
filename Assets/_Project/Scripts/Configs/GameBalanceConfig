@@ -1,0 +1,58 @@
+{
+    "player": {
+        "maxHealth": 100.0,
+        "moveSpeed": 5.0,
+        "collectionRadius": 10.0
+    },
+    "enemies": [
+        {
+            "id": "fast_enemy",
+            "health": 10.0,
+            "moveSpeed": 4.0,
+            "damage": 3.0,
+            "experienceDrop": 1
+        },
+        {
+            "id": "slow_enemy",
+            "health": 20.0,
+            "moveSpeed": 2.0,
+            "damage": 10.0,
+            "experienceDrop": 1
+        }
+    ],
+    "shootAbilities": [
+        {
+            "id": "direction_arrow",
+            "baseDamage": 10.0,
+            "attackCooldown": 0.44999998807907107,
+            "projectileSpeed": 17.0
+        }
+    ],
+    "auraAbilities": [
+        {
+            "id": "aura",
+            "baseDamage": 1.0,
+            "attackCooldown": 0.20000000298023225,
+            "radius": 3.0
+        }
+    ],
+    "experience": {
+        "baseExpToLevel": 10,
+        "expScaling": 1.5
+    },
+    "spawn": {
+        "spawnRadius": 40.0,
+        "spawnInterval": 0.30000001192092898,
+        "maxEnemiesAlive": 30,
+        "enemySpawns": [
+            {
+                "enemyId": "fast_enemy",
+                "weight": 70
+            },
+            {
+                "enemyId": "slow_enemy",
+                "weight": 30
+            }
+        ]
+    }
+}
